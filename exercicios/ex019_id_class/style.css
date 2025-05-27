@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+/*
+em html é id e em css é #
+em html é class em css é .
+*/
+
+body{
+    background-color: rgb(100, 199, 100);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#principal { /* isso é o id que aqui no css se escreve com # */
+    text-align: center;
+    color: white;
+} /*posso usar sem o h1 ou tal*/
+
+h1{
+    color: rgb(36, 172, 36);
+}
+h2{
+    color: rgb(11, 73, 11) ;
+}
+
+.basico{ /*isso é o class que aqui em css se escreve com . */
+    color: blueviolet;
+    background-color: beige;
+    
+}

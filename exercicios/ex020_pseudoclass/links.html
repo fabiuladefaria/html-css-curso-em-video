@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{ /*site sem estar visitado*/
+            color: red;
+            text-decoration: none; /*significa que nao tera aquele sublinhado*/
+            font-weight: bold; /*fica em negrito*/
+        }
+
+        
+        a:visited{ /*site ja visitado*/
+            color: blue;
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline; /*fica com sublinhado quando passa por cima a mousse*/
+        }
+
+        a:active{ /*Quando eu clicar na palavra ela ira ficar amarela*/
+            color: yellow;
+        }
+
+        /*pseudo elemento*/
+
+        a::after{
+            content: ' [link]';
+            color: rgb(138, 43, 226);
+            text-decoration: none;
+            font-weight: normal;
+
+        }
+
+        a::before{
+            content: 'antes ';
+        }
+
+    </style>
+</head>
+<body>
+   <h1>Personalisando links</h1> 
+</body>
+
+    <ul>
+        <li><a href="https://github.com/gustavoguanabara" target="_blank" >Repositorio GitHub</a></li>
+        <li><a href="https://pt.wikipedia.org/wiki/Novak_Djokovic" >Canal do youtube</a></li>
+        <li><a href="https://www.instagram.com/djokernole/" >Site do Cursoemvideo</a></li>
+    </ul>
+
+</html>

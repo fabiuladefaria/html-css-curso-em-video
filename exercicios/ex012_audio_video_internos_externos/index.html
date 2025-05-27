@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>videos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este video esta hospedado no meu proprio servidor.</p>
+
+    <video src="midias/video.mp4" width="500"></video>
+
+    <video widh="500" poster="imagens/teste.jpg" controls><!--aqui eu pus o tamanho dos videos, o poster que quer dizer a capa e o controls para aparecer o play-->
+        <!--lembrar que para 500 a imagem do poster precisar estar com 500x281px-->
+
+        <!--Aqui eu pus 4 tipos de formato caso nao abra algum ele tente outro-->
+        <source scr="midias/video.mp4" type="video/mp4"> 
+        <source scr="" type="video/m4v">
+        <source scr="" type="video/webm">
+        <source scr="" type="video/ogg">
+        <p>Seu navegador nao tem compatibilidade com reproducao de videos</p>
+    </video>
+
+    <h1>Inserindo video do youtube</h1>
+    <!--aqui eu fui no youtube no compartilhar tinha incorporar e copiei e colei aqui-->
+    
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/YGwsj6laA-Y?si=cwwpBIjERA92xs89" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    
+</body>
+</html>
