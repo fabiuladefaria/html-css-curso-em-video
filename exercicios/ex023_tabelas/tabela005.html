@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio de tabela</title>
+
+<style>
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+            width: 800px;
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+
+        }
+
+        caption{
+            border: 1px solid black;
+            padding: 10px;
+            font-size: 1.3em;
+            font-weight: bold;
+        }
+
+        col.cnome{
+            background-color:aqua;
+        }
+
+        col.cgrupo{
+            background-color: burlywood;
+        }
+
+</style>
+
+
+
+</head>
+<body>
+    <table>
+
+        <colgroup> <!--Para que todas as colunas sejam formatadas-->
+            <col class="cnome">
+            <col class="cgrupo" span="2"> <!--Significa que vai usar na 2 e 3 coluna, ver a sequencia-->
+            <col class="cprof">
+        
+        </colgroup>
+        <caption>Cadastro</caption>
+
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissao</th>
+        </tr>
+
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+
+        <tr>
+            <td>Ana Flavia</td>
+            <td>F</td>
+            <td>21</td>
+            <td>Radialista</td>
+        </tr>
+
+
+        <tr>
+            <td>Maria Fernanda</td>
+            <td>F</td>
+            <td>31</td>
+            <td>Vendedora</td>
+        </tr>
+
+        <tr>
+            <td>Carlos Eduardo</td>
+            <td>M</td>
+            <td>48</td>
+            <td>Pedreiro</td>
+        </tr>
+
+        <tr>
+            <td>Luiz Carlos</td>
+            <td>M</td>
+            <td>35</td>
+            <td>Professor</td>
+        </tr>
+
+        <tr>
+            <td>Fsbiula de Faria</td>
+            <td>F</td>
+            <td>26</td>
+            <td>Estudante</td>
+        </tr>
+
+    </table>
+</body>
+</html>
